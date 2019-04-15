@@ -64,7 +64,7 @@ if( $_SERVER['QUERY_STRING'] ) {
 $folder = str_replace($_SERVER['DOCUMENT_ROOT'],"",
 		      str_replace("index.php","",$pruned_uri)
 	);
-$script_path = str_replace($_SERVER['DOCUMENT_ROOT'],"",dirname($_SERVER["SCRIPT_FILENAME"]));
+$script_path = "/user/msajatovic/php-plots/";
 $target_folder = str_replace($script_path,getcwd(),$folder);
 $script_path = str_replace("//","/","/".$script_path);
 chdir( $target_folder  )
