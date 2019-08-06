@@ -228,11 +228,11 @@ if ($_GET['noplots']) {
 		$max=25;
 		$asym=2;
 		$len=strlen($filename);
-		if ($len >= $max) {
-			$short_filename=substr($filename, 0, $max/2-$asym). "..." .substr($filename, $len-1-$max/2-$asym,$len-1);
-		} else {
+		//if ($len >= $max) {
+		//	$short_filename=substr($filename, 0, $max/2-$asym). "..." .substr($filename, $len-1-$max/2-$asym,$len-1);
+		//} else {
 			$short_filename=$filename;
-		}
+		//}
 		$imgname=$path_parts['filename']."_thumb.".$path_parts['extension'];		
 		if( !file_exists($imgname) ) {
 			$imgname = $filename;
@@ -240,7 +240,7 @@ if ($_GET['noplots']) {
 			array_push($others, "<a class=\"file\" href=\"$filename\">[high res]</a>");
 		}
 		print "<div class='pic'>\n";
-		print "<h3><a href=\"$filename\">$short_filename</a></h3>";
+		print "<h3 class='maja'><a class='maja' href=\"$filename\">$short_filename</a></h3>";
 		// print "<a href=\"$filename\">";
 		print "<img src=\"$imgname\" style=\"border: none; width: 40ex; \">";
 		// print "</a>";

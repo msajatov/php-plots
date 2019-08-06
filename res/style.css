@@ -29,6 +29,7 @@ div.pic {
     box-shadow: 7px 5px 5px rgb(80,80,80);         /* New browsers */  
     text-align: center;
     position:relative;
+    max-width: 42ex;
 }
 
 div.dirlinks h2 {  margin-bottom: 4pt; margin-left: -24pt; color: rgb(80,0,0);  }
@@ -71,6 +72,16 @@ img:hover {
 
 img.wide:hover {
     cursor : sw-resize; 
+}
+
+a.maja {
+    font-size: 10pt;
+    word-wrap: break-word;
+}
+
+h3.maja {
+    font-size: 10pt;
+    word-wrap: break-word;
 }
 
 /* ]]> */

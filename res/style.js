@@ -17,8 +17,9 @@ var myAnim = function() {
 	}
 	this.src = this.src.replace("_thumb","");
     }
-    $this.toggleClass('wide').animate({width: animWidth}, "fast");
+//    $this.toggleClass('wide').animate({width: animWidth}, "fast");
 }
+
 
 $(document).ready(function(){
 	$("img").click(myAnim);
@@ -27,3 +28,4 @@ $(document).ready(function(){
 		revert: true
 		    });
     });
+
