@@ -2,7 +2,7 @@ import os
 
 all_dirs = [x[0] for x in os.walk("./")]
 
-cwd = "/afs/hephy.at/user/m/msajatovic/www/php-plots"
+cwd = "/eos/user/m/msajatov/www/php-plots"
 for directory in all_dirs :
 	if ("res" in directory) or (".git" in directory) or (directory=="./") : 
 		continue
